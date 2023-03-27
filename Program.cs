@@ -1,0 +1,65 @@
+﻿using System;
+
+
+namespace FirstProgram
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("what method of opperation are you using");
+            Console.WriteLine("enter 1 for multiplication");
+            Console.WriteLine("enter 2 for divison");
+            Console.WriteLine("enter 3 for subtraction");
+            Console.WriteLine("enter 4 for addition");
+            Console.WriteLine("enter 5 for remainder");
+
+            int select = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Select first number");
+            int num_1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Select second number");
+            int num_2 = Convert.ToInt32(Console.ReadLine());
+
+            int total = 0;
+            switch (select)
+            {
+                case 1:
+                    int mult = num_1 * num_2;
+                    Console.WriteLine(mult);
+                    break;
+                    
+
+                case 2:
+                   int div  = num_1 / num_2;
+                    Console.WriteLine(div);
+                    break;
+
+                case 3:
+                  int  sub = num_1 - num_2;
+                    Console.WriteLine(sub);
+                    break;
+
+
+                case 4:
+                   int add = num_1 + num_2;
+                    Console.WriteLine(add);
+                    break;
+                case 5:
+                    int rem = num_1 % num_2;
+                    Console.WriteLine(rem);
+                    break;
+
+                default:
+                    Console.WriteLine(select + " is not an opption choose a diffrent method");
+                    break;
+
+                    
+
+
+
+            }
+            Console.WriteLine(" Here is your answer have a nice day");
+        }
+    }
+}
