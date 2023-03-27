@@ -40,7 +40,7 @@ switch (select)
         break;
 
     default:
-        Console.WriteLine(select + " is not an opption choose a diffrent method");
+        Console.WriteLine(select + " is not an option choose a diffrent method");
         break;
 
 
