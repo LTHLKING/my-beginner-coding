@@ -17,11 +17,11 @@ namespace FirstProgram
             int select = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Select first number");
-            int num_1 = Convert.ToInt32(Console.ReadLine());
+            int num_1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Select second number");
-            int num_2 = Convert.ToInt32(Console.ReadLine());
+            int num_2 = Convert.ToDouble(Console.ReadLine());
 
-            int total = 0;
+            double total = 0;
             switch (select)
             {
                 case 1:
@@ -31,22 +31,22 @@ namespace FirstProgram
                     
 
                 case 2:
-                   int div  = num_1 / num_2;
+                   double div  = num_1 / num_2;
                     Console.WriteLine(div);
                     break;
 
                 case 3:
-                  int  sub = num_1 - num_2;
+                  double  sub = num_1 - num_2;
                     Console.WriteLine(sub);
                     break;
 
 
                 case 4:
-                   int add = num_1 + num_2;
+                   double add = num_1 + num_2;
                     Console.WriteLine(add);
                     break;
                 case 5:
-                    int rem = num_1 % num_2;
+                    double rem = num_1 % num_2;
                     Console.WriteLine(rem);
                     break;
 
